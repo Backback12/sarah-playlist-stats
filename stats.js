@@ -1,7 +1,7 @@
 "use strict"
 
-let SPOTIFY_CLIENT_ID = process.env.CLIENT_ID;
-let SPOTIFY_CLIENT_SECRET = process.env.CLIENT_SECRET;
+let SPOTIFY_CLIENT_ID = "b742686757294000933a05c841f12ae6";
+let SPOTIFY_CLIENT_SECRET = "27430425d91b4080a5cca5bc31881183";
 var access_token = null;
 var playlist_data = [];
 var displayNames = {};
