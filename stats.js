@@ -219,10 +219,11 @@ async function parseData(step) {
     }
 }
 
-function sortBy(key, reverse) {
+function sortBy(key) {
+    let reverse = document.getElementById('songReverse').checked;
     playlist_data.sort(
         function(b, a){
-            return a['audio_features'][key] - b['audio_features'][key] * (reverse ? -1 : 1);
+            return (a['audio_features'][key] - b['audio_features'][key]) * (reverse ? -1 : 1);
         }
     )
     //return playlist_data;
