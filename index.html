@@ -4,10 +4,40 @@
   <title>Sarah's Playlist Stats</title>
   <!--<meta name="description" content="Our first page">
   <meta name="keywords" content="html tutorial template">-->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://bundle.run/buffer@6.0.3"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="stats.js"></script>
   </head>
   <body>
-  Stats
+  <div id="header">
+    <h1>Sarah's Playlist Stats Woooooo</h1>
+    <h5>All this data is told by Spotify and im just reading it.
+      its made by some spotify algorithm so idk
+    </h5>
+  </div>
+  <div id="songButtons">
+    Sort Songs By:
+    <button onclick="sortBy('acousticness')">Acousticness</button> 
+    <button onclick="sortBy('danceability')">Danceability</button>
+    <button onclick="sortBy('energy')">Energy</button>
+    <button onclick="sortBy('liveness')">Liveness??</button>
+    <button onclick="sortBy('speechiness')">Speechiness</button>
+    <button onclick="sortBy('tempo')">Tempo</button>
+    <button onclick="sortBy('valence')">Valence</button>
+  </div>
+  <div id="OwnerButtons">
+    Sort Owners By:
+    <Button># of Songs</Button>
+    <button>highest avg danceability</button>
+    <button>highest avg tempo</button>
+    <button>highest avg valence</button>
+  </div>
+  <div>
+    <textarea id="output" style="width: 95vw; height: 75vh;" value="this is Output">
+  </div>
+  
+  
   </body>
 </html>
